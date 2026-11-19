@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+  namespace: practica-s12
+data:
+  SPRING_DATASOURCE_URL: "jdbc:sqlserver://db-service:1433;databaseName=BodegaPeiranoDBF;encrypt=true;trustServerCertificate=true"
+  SPRING_DATASOURCE_USERNAME: "sa"
+  SPRING_DATASOURCE_PASSWORD: "YourStrongPassword2026"
+  SPRING_DATA_MONGODB_URI: "mongodb+srv://marioryvaleriano_db_user:valeriano2025@cluster0.5tclqt1.mongodb.net/BodegaPeiranoNoSQL"
+  SPRING_DATA_MONGODB_DATABASE: "BodegaPeiranoNoSQL"
